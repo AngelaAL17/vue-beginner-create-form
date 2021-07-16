@@ -1,24 +1,8 @@
-# first-project
+간단한 로그인 폼 만들기
+아이디 / 패스워드 입력받고 서버로 넘기는 것까지
 
-## Project setup
-```
-npm install
-```
+簡単なLoginForm作り
+ID/PW 入力を受けてサーバに送信するまで
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+参考：https://inf.run/EPK9
+# vue-beginner-create-form
