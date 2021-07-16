@@ -1,4 +1,10 @@
 <template>
+<!--
+v-on:submit.prevent: 폼의 기본적인 동작을 막기 위한 modifier
+form의 기본 동작 이벤트 (새로고침)을 하지 않도록 제어하는 것
+js: event.preventDefalut()와 같은 효과를 가짐
+-->
+
   <form v-on:submit.prevent="infoReceive">
 <!-- 아이디 구역 1-->
     <div>
@@ -17,7 +23,7 @@
 </template>
 
 <script>
-// npm install --save axios 
+// npm install --save axios 필요
 import axios from 'axios';
 
 export default {
@@ -45,7 +51,7 @@ export default {
 
      //Post 새로운 객체 생성용 
      axios.post(url,data) // axios.post("url 주소",{data 객체})
-      .then(function(response){
+      .then(function(response){ // then은 성공, catch는 실패
         console.log(response);
       })
       .catch(function(error){
